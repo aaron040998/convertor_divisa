@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app.js"></script>
+    <link href="/style/estilos.css" rel="stylesheet">
+    <title>Conversor de divisas</title>
+</head>
+<body>
+    <center>
+    <div class="titprim">
+        <h1>Conversor de Divisas</h1>
+    </div>
+    <div class="contmid">
+        cantidad:<input class="monto" type="number" id="cantidad" min="0" max="1000" value="0" onclick="convertir()">
+        Converir de :
+        <select id="de"class="from" onclick="convertir()">
+            <option value="1">Sol</option>
+            <option value="2">Dolar</option>
+            <option value="3">Euro</option>
+        </select><br>
+        Convertir a :
+        <select id="a"class="from" onclick="convertir()">
+            <option value="1">Sol</option>
+            <option value="2">Dolar</option>
+            <option value="3">Euro</option>
+        </select><br>
+        <input type="button" id="valor" value="Cotizar" class="cotizar" onclick="convertir()">
+    </div><br>
+    <div class="resl">
+        <h1 id ="resultado">Resultado:$0.00</h1>
+    </center>   
+    </div>
+</body>
+</html>
+
+
